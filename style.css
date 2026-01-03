@@ -823,9 +823,19 @@ img {
 }
 
 .social-link:hover {
-    background: white;
-    color: var(--primary);
     transform: translateY(-3px);
+}
+
+.social-link[aria-label="X (formerly Twitter)"]:hover {
+    background: #000000;
+    color: white;
+    border-color: #000000;
+}
+
+.social-link[aria-label="YouTube"]:hover {
+    background: #FF0000;
+    color: white;
+    border-color: #FF0000;
 }
 
 @keyframes pulse {
