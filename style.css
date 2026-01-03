@@ -832,6 +832,12 @@ img {
     border-color: #000000;
 }
 
+.social-link[aria-label="Reddit"]:hover {
+    background: #FF4500;
+    color: white;
+    border-color: #FF4500;
+}
+
 .social-link[aria-label="YouTube"]:hover {
     background: #FF0000;
     color: white;
