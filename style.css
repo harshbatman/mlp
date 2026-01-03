@@ -803,6 +803,16 @@ img {
 }
 
 /* Social Icons */
+.social-label {
+    font-size: 0.875rem;
+    letter-spacing: 2px;
+    color: var(--accent);
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
 .footer-social {
     display: flex;
     justify-content: center;
