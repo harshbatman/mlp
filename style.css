@@ -832,6 +832,12 @@ img {
     border-color: #000000;
 }
 
+.social-link[aria-label="Instagram"]:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    color: white;
+    border-color: transparent;
+}
+
 .social-link[aria-label="Reddit"]:hover {
     background: #FF4500;
     color: white;
