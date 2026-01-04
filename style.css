@@ -1057,6 +1057,51 @@ img {
     .section-title {
         font-size: 2rem;
     }
+
+    /* Mobile Store Buttons - Hero */
+    .hero-store-buttons {
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 2rem;
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .hero-store-btn {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    /* Mobile Store Buttons - Footer */
+    .store-buttons {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .store-btn {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .mobile-break {
+        display: inline;
+    }
+
+    .contact-cards {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .contact-card {
+        min-width: 0;
+        width: 100%;
+    }
 }
 
 @keyframes slideDown {
