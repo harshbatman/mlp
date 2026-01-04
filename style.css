@@ -378,6 +378,59 @@ img {
     background: rgba(255, 255, 255, 0.2);
 }
 
+/* Hero Store Buttons */
+.hero-store-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.hero-store-btn {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 0.8rem 1.5rem;
+    color: #ffffff;
+    transition: var(--transition);
+    min-width: 180px;
+    text-decoration: none;
+}
+
+.hero-store-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.hero-store-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+    fill: currentColor;
+}
+
+.hero-store-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    line-height: 1.2;
+}
+
+.hero-small-text {
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.hero-large-text {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
 /* How It Works */
 .steps-grid {
     display: grid;
