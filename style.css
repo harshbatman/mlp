@@ -811,6 +811,70 @@ img {
     font-weight: 700;
 }
 
+/* App Download Section */
+.app-download-section {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.download-title {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.store-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.store-btn {
+    display: flex;
+    align-items: center;
+    background: #000000;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 0.8rem 1.5rem;
+    color: #ffffff;
+    transition: var(--transition);
+    min-width: 180px;
+    text-decoration: none;
+}
+
+.store-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-3px);
+    border-color: var(--accent);
+}
+
+.store-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+    fill: currentColor;
+}
+
+.store-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    line-height: 1.2;
+}
+
+.store-text .small-text {
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.store-text .large-text {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
 .footer-social {
     display: flex;
     justify-content: center;
