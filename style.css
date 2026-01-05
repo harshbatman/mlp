@@ -833,9 +833,6 @@ img {
     color: white;
     font-weight: 600;
     font-size: 1rem;
-    word-break: break-word;
-    overflow-wrap: break-word;
-    hyphens: auto;
 }
 
 .contact-email:hover {
@@ -1239,6 +1236,10 @@ img {
         max-width: 350px;
         margin: 0 auto;
         padding: 1.25rem 1.5rem;
+    }
+
+    .contact-email {
+        font-size: 0.8rem;
     }
 
     /* Download Section */
