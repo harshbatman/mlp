@@ -816,6 +816,9 @@ img {
     text-align: left;
     display: flex;
     flex-direction: column;
+    min-width: 0;
+    flex: 1;
+    overflow: hidden;
 }
 
 .contact-label {
@@ -830,6 +833,9 @@ img {
     color: white;
     font-weight: 600;
     font-size: 1rem;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
 }
 
 .contact-email:hover {
