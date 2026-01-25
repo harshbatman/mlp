@@ -226,18 +226,58 @@ img {
     display: block;
 }
 
-.nav-logo {
-    height: 110px;
-    /* Adjusted size */
-    width: auto;
-    object-fit: contain;
+/* Logo Styles */
+.mahto-logo {
+    background-color: #000;
+    color: #fff;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.25rem;
+    border-radius: 1rem;
+    line-height: 1;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.footer-logo {
-    height: 150px;
-    width: auto;
+.mahto-logo:hover {
+    transform: scale(1.02);
+}
+
+.mahto-logo-main {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    letter-spacing: -0.5px;
+}
+
+.mahto-logo-sub {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin-top: 0.15rem;
+    opacity: 0.95;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+/* Larger logo for footer */
+.mahto-logo-lg {
+    padding: 1.5rem 2.5rem;
+    border-radius: 1.5rem;
     margin: 0 auto;
-    object-fit: contain;
+}
+
+.mahto-logo-lg .mahto-logo-main {
+    font-size: 3.5rem;
+}
+
+.mahto-logo-lg .mahto-logo-sub {
+    font-size: 1.2rem; /* Significantly larger for visibility */
+    margin-top: 0.3rem;
+    font-weight: 600;
 }
 
 .nav-links {
