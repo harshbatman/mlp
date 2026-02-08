@@ -239,7 +239,7 @@ img {
     line-height: 1;
     text-align: center;
     transition: transform 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .mahto-logo:hover {
@@ -275,7 +275,8 @@ img {
 }
 
 .mahto-logo-lg .mahto-logo-sub {
-    font-size: 1.2rem; /* Significantly larger for visibility */
+    font-size: 1.2rem;
+    /* Significantly larger for visibility */
     margin-top: 0.3rem;
     font-weight: 600;
 }
@@ -382,41 +383,7 @@ img {
     margin-bottom: 4rem;
 }
 
-.hero-stats {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(12px);
-    padding: 1.5rem 3rem;
-    border-radius: var(--radius-lg);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    display: inline-flex;
-}
 
-.stat-item {
-    text-align: center;
-}
-
-.stat-number {
-    display: block;
-    font-size: 1.75rem;
-    font-weight: 800;
-    color: var(--accent);
-}
-
-.stat-label {
-    font-size: 0.875rem;
-    opacity: 0.9;
-    font-weight: 500;
-}
-
-.stat-divider {
-    width: 1px;
-    height: 40px;
-    background: rgba(255, 255, 255, 0.2);
-}
 
 /* Hero Store Buttons */
 .hero-store-buttons {
