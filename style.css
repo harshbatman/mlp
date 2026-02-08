@@ -439,15 +439,16 @@ img {
 }
 
 .step-icon {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 900;
-    color: rgba(202, 138, 4, 0.15);
-    /* Faded accent */
-    margin-bottom: 1rem;
+    color: rgba(15, 23, 42, 0.04);
+    /* Light grey faded */
     font-family: 'Outfit', sans-serif;
     position: absolute;
-    top: 1rem;
-    right: 1.5rem;
+    top: 0.5rem;
+    right: 1rem;
+    line-height: 1;
+    z-index: 0;
 }
 
 .step-card h3 {
@@ -456,6 +457,8 @@ img {
     color: var(--primary);
     position: relative;
     z-index: 1;
+    padding-right: 3rem;
+    /* Make room for the number */
 }
 
 .step-card p {
