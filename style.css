@@ -588,16 +588,18 @@ img {
 }
 
 .eco-card {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: white;
+    border: 1px solid var(--border-color);
     padding: 2rem;
     border-radius: var(--radius-md);
     transition: var(--transition);
+    box-shadow: var(--shadow-sm);
 }
 
 .eco-card:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary);
 }
 
 .eco-card h3 {
@@ -606,14 +608,16 @@ img {
 }
 
 .eco-card p {
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--text-muted);
     margin-bottom: 1.5rem;
 }
 
 .btn-link {
-    color: white;
+    color: var(--primary);
     font-weight: 600;
     font-size: 0.9rem;
+    text-decoration: none;
+    transition: var(--transition);
 }
 
 .btn-link:hover {
