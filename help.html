@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help & Support - MAHTO Land & Properties</title>
+    <meta name="description"
+        content="Get assistance with MAHTO Land & Properties. Contact our support team, request data deletion, or suggest new features.">
+    <link rel="icon" type="image/jpeg" href="assets/favicon.jpg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .support-hero {
+            padding: 120px 0 60px 0;
+            background: linear-gradient(135deg, rgba(15, 82, 186, 0.05) 0%, rgba(40, 180, 99, 0.05) 100%);
+            text-align: center;
+        }
+
+        .support-hero h1 {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .support-hero p {
+            color: var(--text-muted);
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .support-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            padding: 60px 0;
+        }
+
+        .support-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-color);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .support-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-premium);
+            border-color: var(--primary);
+        }
+
+        .support-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: var(--primary);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .support-card:hover::before {
+            opacity: 1;
+        }
+
+        .card-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(15, 82, 186, 0.1);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+        }
+
+        .support-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-main);
+        }
+
+        .support-card p {
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+            flex-grow: 1;
+        }
+
+        .support-meta {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--accent-hover);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .email-link {
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: underline;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 100px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+
+        .badge-blue {
+            background: rgba(15, 82, 186, 0.1);
+            color: var(--primary);
+        }
+
+        .badge-green {
+            background: rgba(40, 180, 99, 0.1);
+            color: var(--accent-hover);
+        }
+
+        .badge-red {
+            background: rgba(234, 67, 53, 0.1);
+            color: #ea4335;
+        }
+
+        .tip-box {
+            background: white;
+            border: 1px dashed var(--primary);
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            margin-top: 1.5rem;
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+        }
+
+        .tip-icon {
+            color: var(--primary);
+            font-size: 1.5rem;
+        }
+
+        .tip-text {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo-link">
+                <div class="mahto-logo">
+                    <span class="mahto-logo-main">MAHTO</span>
+                    <span class="mahto-logo-sub">Land and Properties</span>
+                </div>
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html#buy">Buy</a>
+                <a href="index.html#sell">Sell</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="help.html" class="active">Help & Support</a>
+            </div>
+
+            <div class="nav-actions">
+                <a href="index.html#start" class="btn btn-primary">List Property</a>
+                <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="support-hero">
+        <div class="container">
+            <span class="section-tag">Support Center</span>
+            <h1>How can we help?</h1>
+            <p>Get in touch with our team for app issues, account requests, or to share your ideas for improvement.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="support-grid">
+            <!-- App Support Card -->
+            <div class="support-card">
+                <span class="badge badge-blue">Support Team</span>
+                <div class="card-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                </div>
+                <h3>App Support</h3>
+                <p>Facing issues while using the MAHTO Land & Properties Application? Our support team is here to
+                    troubleshoot and resolve your technical problems.</p>
+                <a href="mailto:support@mahtoji.tech" class="email-link">support@mahtoji.tech</a>
+                <div class="support-meta">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    Response: 24 - 48 Hours
+                </div>
+                <div class="tip-box">
+                    <div class="tip-icon">📸</div>
+                    <div class="tip-text"><strong>Pro Tip:</strong> Attach a screenshot of the issue for a faster
+                        resolution.</div>
+                </div>
+            </div>
+
+            <!-- CEO Office Card -->
+            <div class="support-card">
+                <span class="badge badge-green">Priority</span>
+                <div class="card-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="8.5" cy="7" r="4"></circle>
+                        <polyline points="17 11 19 13 23 9"></polyline>
+                    </svg>
+                </div>
+                <h3>CEO Office</h3>
+                <p>For escalation of unresolved issues or sensitive matters, you can reach out directly to the CEO's
+                    office for a high-priority review.</p>
+                <a href="mailto:harshkumarceo@mahtoji.tech" class="email-link">harshkumarceo@mahtoji.tech</a>
+                <div class="support-meta">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                        </path>
+                    </svg>
+                    Direct Escalation Path
+                </div>
+            </div>
+
+            <!-- Account & Feature Request -->
+            <div class="support-card">
+                <span class="badge badge-red">Management</span>
+                <div class="card-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                        <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                    </svg>
+                </div>
+                <h3>Requests & Feedback</h3>
+                <p>Submit a request for account or data deletion, or share your valuable suggestions for new features
+                    you'd like to see in our app.</p>
+                <a href="mailto:support@mahtoji.tech" class="email-link">support@mahtoji.tech</a>
+                <div class="support-meta">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                    Data Protection Compliant
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo-link">
+                        <div class="mahto-logo mahto-logo-lg">
+                            <span class="mahto-logo-main">MAHTO</span>
+                            <span class="mahto-logo-sub">Land and Properties</span>
+                        </div>
+                    </a>
+                    <p>Your trusted partner for all things real estate in India.</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                &copy; 2026 MAHTO Land & Properties. All rights reserved. <br class="mobile-break">
+                Built with <span class="heart-beat">❤️</span> for everyone who dreams of owning a home.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
